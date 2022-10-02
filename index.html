@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>resume</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-black text-yellow-50">
+        <!-- 레이아웃 : 전체 플렉스 박스 설정  -->
+            <div class="flex flex-col w-3/4 m-auto">
+                <!-- 메뉴바 -->
+                <aside class="flex justify-between">
+                    <p>Hello</p>
+                    <div class="w-72 pl-3 pr-3 border-4 border-blue-300">
+                        <ul class="flex gap-5">
+                            <li>
+                                <a class="text-rose-100" href="#info">Info</a>
+                            </li>
+                            <li>
+                                <a class="text-rose-200" href="#skills">Skills</a>
+                            </li>
+                            <li>
+                                <a class="text-rose-300" href="#project">Project</a>
+                            </li>
+                            <li>
+                                <a class="text-rose-400" href="#experiecne">Experience</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- 헤더 : 사진 및 이름 소개 부분 -->
+                <header class="flex gap-3">
+                    <!-- 사진 -->
+                    <div class="w-1/4">
+                        <img class="rounded-full" src="./images/user_profile.png" alt="">
+                    </div>
+                    <!-- 소개 -->
+                    <div class="w-3/4 flex">
+                        <div class="relative">
+                        <p class="text-9xl font-serif tracking-tighter text-slate-100/20">I`m</p>
+                        <p class="absolute top-[40px] left-[3px] text-4xl font-serif text-rose-200">
+                            jae<strong class="font-normal text-rose-300">young</strong><strong class="font-normal text-rose-400">.lee</strong>
+                        </p>
+                        <p class="absolute top-[80px] text-2xl font-serif text-rose-200">Web<strong class="font-normal text-rose-400">Developer</strong></p>
+                        </div>
+                        <div class="">
+                            <ul>
+                                <li>a</li>
+                                <li>b</li>
+                                <li>c</li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <!-- 메인 : 프로젝트, 경력 등 콘텐츠 -->
+                <main>
+                    <!-- 메인 콘텐츠 -->
+                    <div class="flex flex-col">
+                        <!-- info, skliis -->
+                        <div class="flex">
+                            <!-- info box-outer -->
+                            <div class="flex items-center justify-center w-1/2 h-72 border-4 border-green-300" id="info">
+                                <!-- info box-inner  -->
+                                <div class="w-3/4 h-3/4 border-4 border-violet-300">
+                                    <!-- info title -->
+                                    <div class="flex w-48 mr-auto border-4 border-red-100">
+                                        <!-- info icon -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                            <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                                        </svg>
+                                        <h2 class="ml-1">Info</h2>
+                                    </div>
+                                    <!-- info list -->
+                                    <ul class="flex flex-col">
+                                        <li>
+                                            GitHub
+                                        </li>
+                                        <li>Mail</li>
+                                        <li>p.h</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- skills box-outer -->
+                            <div class="w-1/2 h-72 border-4 border-blue-300" id="skills">
+                                <!-- skills box-inner -->
+                                skills
+                            </div>
+                        </div>
+                        <!-- project -->
+                        <div class="h-72 border-4 border-blue-300" id="project">project</div>
+                        <!-- career -->
+                        <div class="h-72 border-4 border-blue-300" id="experiecne">Experience</div>
+                    </div>
+                </main>
+            </div>
+</html>
